@@ -11,7 +11,10 @@
   "scripts": {
     "start": "cross-env APP_ROOT=example umi dev",
     "build": "father-build && tsc --emitDeclarationOnly",
-    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'"
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "umi-test",
+    "test:coverage": "umi-test --coverage",
+    "test:update": "umi-test --updateSnapshot"
   },
   "lint-staged": {
     "*.ts?(x)": [
