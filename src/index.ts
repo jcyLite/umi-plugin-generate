@@ -1,6 +1,6 @@
 import { IApi } from '@umijs/types';
-import createPageGenerator from './createPageGenerator';
-
+import createPageGenerator from './createGenerator';
+import createCptGenerator from './createCptGenerator';
 interface IRegisterGenerator {
   key: string;
   Generator: any;
@@ -12,8 +12,8 @@ export default (api: IApi) => {
     utils: { chalk },
   } = api;
   api.registerGenerator({
-    key: 'page',
+    key: 'cpt',
     // @ts-ignore
-    Generator: createPageGenerator({ api }),
+    Generator: createCptGenerator({ api }),
   });
 };
