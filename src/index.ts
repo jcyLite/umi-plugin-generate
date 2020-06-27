@@ -11,6 +11,9 @@ export default (api: IApi) => {
     paths,
     utils: { chalk },
   } = api;
+  api.describe({
+    key:'generate'
+  })
   api.registerGenerator({
     key: 'cpt',
     // @ts-ignore

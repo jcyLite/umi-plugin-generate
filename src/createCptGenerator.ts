@@ -29,12 +29,21 @@ async function chooseDir(path: any) {
                             value: item,
                             checked: index == 0 ? true : false,
                         };
-                    })),
+                    })).concat(dir.length?[
+                        {
+                            name:'返回上一级',
+                            value:'-'
+                        }
+                    ]:[]),
                 },
             ]).then(async (res: any) => {
                 if (res.dir == '_') {
                     resolve()
-                } else {
+                } else if(res.dir=='-'){
+                    dir.pop();
+                    await chooseDir(path)
+                    resolve()
+                }else{
                     dir.push(res.dir);
                     await chooseDir(path)
                     resolve()
@@ -57,12 +66,12 @@ export default function ({ api }: { api: IApi }) {
             const cssExt = '.less';
             let name = basename(path);
             await chooseDir(join(api.cwd))
-            console.log(`choose ${dir.join('/')} success`)
             let targetPath = join(api.cwd, 'src', ...dir, path);
             if (fs.existsSync(targetPath)) {
                 jcyFs.delDir(targetPath);
             }
             fs.mkdirSync(targetPath); //创建目录
+            console.log(api.config)
             this.copyTpl({
                 templatePath: join(__dirname, `../template/component/index${jsExt}.tpl`),
                 target: join(targetPath, `index${jsExt}`),
