@@ -3296,7 +3296,7 @@
   resolved "https://registry.npm.taobao.org/@types/tapable/download/@types/tapable-1.0.5.tgz#9adbc12950582aa65ead76bffdf39fe0c27a3c02"
   integrity sha1-mtvBKVBYKqZerXa//fOf4MJ6PAI=
 
-"@types/testing-library__dom@*":
+"@types/testing-library__dom@*", "@types/testing-library__dom@^7.5.0":
   version "7.5.0"
   resolved "https://registry.npm.taobao.org/@types/testing-library__dom/download/@types/testing-library__dom-7.5.0.tgz?cache=0&sync_timestamp=1592998446560&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Ftesting-library__dom%2Fdownload%2F%40types%2Ftesting-library__dom-7.5.0.tgz#e0a00dd766983b1d6e9d10d33e708005ce6ad13e"
   integrity sha1-4KAN12aYOx1unRDTPnCABc5q0T4=
@@ -3309,13 +3309,6 @@
   integrity sha1-Gu3oMctO1KOYRI31osVLVKNlZE4=
   dependencies:
     pretty-format "^24.3.0"
-
-"@types/testing-library__dom@^7.5.0":
-  version "7.5.0"
-  resolved "https://registry.npm.taobao.org/@types/testing-library__dom/download/@types/testing-library__dom-7.5.0.tgz?cache=0&sync_timestamp=1592998205464&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Ftesting-library__dom%2Fdownload%2F%40types%2Ftesting-library__dom-7.5.0.tgz#e0a00dd766983b1d6e9d10d33e708005ce6ad13e"
-  integrity sha1-4KAN12aYOx1unRDTPnCABc5q0T4=
-  dependencies:
-    "@testing-library/dom" "*"
 
 "@types/testing-library__react-hooks@^3.0.0":
   version "3.2.0"
@@ -8956,10 +8949,10 @@ javascript-stringify@^2.0.1:
   resolved "https://registry.npm.taobao.org/javascript-stringify/download/javascript-stringify-2.0.1.tgz#6ef358035310e35d667c675ed63d3eb7c1aa19e5"
   integrity sha1-bvNYA1MQ411mfGde1j0+t8GqGeU=
 
-jcy-fs@^1.0.9:
-  version "1.0.9"
-  resolved "https://registry.npm.taobao.org/jcy-fs/download/jcy-fs-1.0.9.tgz#1516e38b2d6ad9e137d5c11569633a26135e0151"
-  integrity sha1-FRbjiy1q2eE31cEVaWM6JhNeAVE=
+jcy-fs@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/jcy-fs/-/jcy-fs-1.0.10.tgz#8b6ea32665768952eb13abfe856510bfb72d19c7"
+  integrity sha512-83Fk2qaYKvshhRlElyIq5NoE81ReomCALsNVf6kM1GZFv12nv7mfsLfOYgRmCWtD/EiwW6XNACHh6IHYOLVAGg==
 
 jest-changed-files@^25.5.0:
   version "25.5.0"
@@ -13742,9 +13735,9 @@ shebang-regex@^3.0.0:
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
 shell-quote@^1.6.1:
-  version "1.7.2"
-  resolved "https://registry.npm.taobao.org/shell-quote/download/shell-quote-1.7.2.tgz#67a7d02c76c9da24f99d20808fcaded0e0e04be2"
-  integrity sha1-Z6fQLHbJ2iT5nSCAj8re0ODgS+I=
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/shell-quote/-/shell-quote-1.8.3.tgz#55e40ef33cf5c689902353a3d8cd1a6725f08b4b"
+  integrity sha512-ObmnIF4hXNg1BqhnHmgbDETF8dLPCggZWBjkQfhZpbszZnYur5DUljTcCHii5LC3J5E0yeO/1LIMyH+UvHQgyw==
 
 shellwords@^0.1.1:
   version "0.1.1"
